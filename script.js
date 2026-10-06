@@ -1,0 +1,1 @@
+const items=document.querySelectorAll('.project,.certs a');const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='translateY(0)'}}),{threshold:.08});items.forEach(x=>{x.style.opacity=0;x.style.transform='translateY(18px)';x.style.transition='opacity .6s ease,transform .6s ease';io.observe(x)});
